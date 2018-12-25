@@ -1,0 +1,573 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+  font-size: 10px
+
+body
+  font-size: 1.6rem
+  min-width: 320px
+  position: relative
+  line-height: 1.35
+  font-family: $default-font
+  font-family: "ProximaNova";
+  overflow-x: hidden
+  color: $text
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.is-static
+  position: static
+
+.l-container
+  max-width: 136.4rem
+
+.l-row
+  H
+
+.l-section
+  &:not(:first-of-type)
+    margin-top: 10rem
+
+.c-header
+  padding: 2.4rem 0
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background: white
+  &__content
+    display: flex
+    justify-content: space-between
+  &__menu-toggle
+    margin-right: 3rem
+    display: flex
+    align-items: center
+  &__item
+    &:not(:last-child)
+      margin-right: 5.8rem
+  &__link
+    font-weight: 600
+    color: #465273;
+    font-size: 1.8rem
+  &__text
+    color: #465273;
+    font-size: 1.4rem
+  &__group
+    display: flex
+  &__logo
+    height: 2.6rem
+
+.c-logo 
+  height: 100%
+  &__img
+    height: 100%
+    width: auto
+  
+
+.c-burger
+  border: none
+  outline: none
+  background: transparent
+  width: 2rem
+  height: 1.4rem
+  cursor: pointer
+  position: relative
+  &__lines
+    position: absolute;
+    background: rgba(111,111,111,1);
+    width: 2rem
+    height: 2px
+    top: 50%;
+    right: 0px;
+    margin-top: -1px;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    &::before
+      position: absolute;
+      background-color: #465273;
+      width: 2rem
+      height: 2px
+      top: 0.7rem
+      content: "";
+      display: block;
+      transition: all .3s ease-in-out;
+    &::after 
+      position: absolute;
+      background-color: #465273;
+      width: 2rem
+      height: 2px
+      content: "";
+      display: block;
+      bottom: 0.7rem
+      transition: all .3s ease-in-out;
+
+  &.is-active
+    .c-burger__lines
+      background: transparent
+      &::after
+        transform: rotate(-45deg);
+        bottom: 0
+      &::before
+        transform: rotate(45deg);
+        top: 0
+      
+.c-block-title
+  font-weight: 600
+  font-size: 3rem
+  &--secondary
+    color: #465273;
+  &--lg
+    font-size: 4.6rem
+    line-height: 1
+  &--primary
+    color: #eb3c42;
+  &--dark
+    color: #464646;
+  &--light
+    font-weight: 400
+  &--huge
+    font-size: 5.2rem
+  &--sm
+    font-size: 2.8rem
+
+
+.c-form
+  &--top-line
+    padding-top: 3.8rem
+    position: relative
+    &::before
+      content: " "
+      display: block
+      width: 100%
+      height: 2px
+      background: #465273;
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+  &__text
+    margin-bottom: 1.9rem
+    font-size: 2rem
+    &--sm
+      font-size: 1.8rem
+      margin-bottom: 1.5rem
+  &__copyright
+    margin-top: 1.3rem
+    font-size: 1.4rem
+    font-weight: 400
+
+.c-form-control
+  margin-bottom: 2rem
+  &__input
+    width: 100%
+    font-size: 2rem
+    line-height: 1
+    padding: 1.4rem 0 1.1rem 1.5rem
+    background: transparent
+    border: 2px solid #4b4b4b;
+    &::placeholder
+      color: black
+    &--light
+      color: white
+      border: 2px solid #ffffff;
+      &::placeholder
+        color: white
+
+.c-checkbox
+  &--inline
+    display: inline-block
+  &__input
+    display: none
+    &:checked
+      + .c-checkbox__label
+        &::before
+          background: #4b4b4b;
+        &::after
+          opacity: 1
+  &__label
+    font-size: 1.4rem
+    padding-left: 1.3em
+    position: relative
+    cursor: pointer
+    &::before
+      content: " "
+      display: inline-block
+      background: transparent
+      position: absolute
+      left: 0
+      bottom: 0.2em
+      height: 1em
+      width: 1em
+      border: 2px solid #4b4b4b;
+    &::after
+      content: " "
+      display: inline-block
+      position: absolute
+      left: 0.2em
+      bottom: 0.4em
+      height: 0.6em
+      width: 0.6em
+      background: url(../img/icons/checked.png)
+      background-position: center
+      background-size: cover
+      opacity: 0
+.c-checkbox-list  
+  display: flex
+  flex-wrap: wrap
+  .c-checkbox
+    flex: 1 1 auto
+    margin-right: 0.5rem
+    
+
+.c-button
+  line-height: 1
+  padding: 1.7rem 7.5rem 1.5rem
+  border: none
+  text-transform: uppercase
+  font-size: 1.8rem
+  font-weight: 600
+  cursor: pointer
+  transition: background 0.2s ease-in-out
+  text-decoration: none
+  &:hover,
+  &:focus
+    text-decoration: none
+  &--primary
+    background-color: #eb3c42;
+    color: white
+    &:hover,
+    &:focus
+      color: white
+      background-color: darken(#eb3c42, 10)
+  &--secondary
+    color: white
+    background: #465273
+    &:hover,
+    &:focus
+      color: white
+      background: darken(#465273, 10)
+  &--light
+    color: #465273
+    background: white
+    &:hover,
+    &:focus
+      color: #465273
+      background: darken(white, 5)
+    
+.c-col-image 
+  position: absolute
+  right: 0
+  &__source
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.c-benefits
+  background: white
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  z-index: 10
+  position: relative
+  > .l-row
+    > [class*="l-col"]
+      &:not(:last-child)
+        .c-benefits__item
+          &::after
+            content: " "
+            display: block
+            position: absolute
+            right: 0
+            top: 15%
+            height: 70%
+            width: 1px
+            background: #979797
+  &__item
+    text-align: center
+    padding-top: 2.8rem
+    padding-bottom: 2.6rem
+    position: relative
+    width: 100%
+  &__title
+    text-transform: uppercase
+    color: #4b4b4b;
+    font-size: 2.4rem
+    margin-bottom: 0
+    span
+      font-size: 36px;
+      font-weight: 600
+      color: #eb3c42;
+  &__description
+    margin-top: 0
+    font-size: 2.2rem
+    color: #979797;
+
+.c-traits
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  background: white
+  padding: 6.3rem 4rem 6.2rem 4rem
+  &__item
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 2.9rem
+  &__icon
+    width: 5rem
+    height: auto
+    margin-right: 2.4rem
+    flex-shrink: 0
+  &__text
+    font-weight: 600
+    color: #4b4b4b;
+    font-size: 2rem
+    line-height: 1
+  &__button
+    margin-top: 9rem
+    display: inline-block
+    padding-right: 4.7rem
+    padding-left: 4.7rem
+
+
+//////////////////
+// SLIDER
+/////////////////
+
+.c-bc-slider
+  margin: 5% 0
+  height: 90%
+  background: white
+  &__glide
+    height: 100%
+.glide
+  &__track
+    height: 100%
+  &__slides
+    height: 100%
+  &__slide-image
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+  &__custom-controls
+    
+  &__custom-control-left,
+  &__custom-control-right
+    background: transparent
+    border: none
+    position: absolute
+    z-index: 10
+    opacity: 0.5
+    transition: opacity 0.2s ease-in-out
+    cursor: pointer
+    &:hover,
+      opacity: 1
+    // width: 2.8rem
+    // height: 4.8rem
+  &__custom-control-left
+    left: 0
+    top: 50%
+    transform: translateY(-50%);
+  &__custom-control-right
+    right: 0
+    top: 50%
+    transform: translateY(-50%);
+  &__custom-control-icon
+    width: 100%
+    height: 100%
+    object-postion: center center
+    object-fit: cover
+
+
+.c-bc-item
+  margin-bottom: 4rem
+  &__image
+    width: 100%
+    height: 46rem
+    object-fit: cover
+  &__content
+    display: flex
+    height: 100%
+    align-items: center
+    padding-top: 1rem
+    padding-bottom: 1rem
+
+    
+
+.c-content
+  &__title
+    font-size: 3.2rem
+    color: #464646;
+    font-weight: 600
+    margin: 0 0 0.4rem 0
+    line-height: 1
+
+  &__meta
+    color: #eb3c42;
+    font-size: 2.2rem
+    margin: 0
+  &__text
+    font-size: 2.2rem
+    margin-top: 3.5rem
+
+.c-advantage
+  margin-bottom: 5.9rem
+  &__icon
+    height: 10rem
+    width: auto
+    margin-bottom: 2.8rem
+  &__description
+    font-size: 2.2rem
+    font-weight: 400
+
+.c-gift
+  position: relative
+  width: auto
+  padding: 4rem 0rem 2rem 3rem
+  color: white
+  background-color: rgba(#212121, 0.6)
+  min-height: 22rem
+  margin-bottom: 2.5rem
+  &__image
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+  &__icon
+    height: 3.4rem
+    width: auto
+    margin-bottom: 1.5rem
+  &__title
+    font-size: 2.1rem
+    font-weight: 600
+    margin-bottom: 0
+    line-height: 1.1
+    
+  &__subtitle
+    font-weight: 2rem
+    opacity: 0.7;
+    margin-top: 0.3rem
+
+.c-modal 
+  display: none; 
+  position: fixed; 
+  z-index: 12
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  &__content
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  &__header
+    padding: 7px 15px;
+    color: black
+  &__body
+    padding: 2px 16px;
+  &__footer
+    padding: 2px 16px;
+  &__close 
+    color: black
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute
+    right: 1rem
+    top: 0rem
+    &:hover,
+    &:focus
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+
+@keyframes animatetop 
+  from 
+    top: -300px;
+    opacity: 0
+  to 
+    top: 0;
+    opacity: 1
+
+#send-success
+  .c-modal__content
+    max-width: 46rem
+
+
+
+#section-main 
+  .c-block-title
+    margin-bottom: 0
+  .c-form
+    margin-top: 4.2rem
+    &__text
+      &--sm
+        margin-top: 2.9rem
+  .c-button
+    margin-top: 4.2rem
+  .c-col-image 
+    height: 90rem
+
+  > .l-container
+    > .l-row
+      > [class*="l-col"]
+        &:first-of-type
+          padding-top: 10rem
+
+  .c-benefits
+    margin-top: 7rem
+
+#section-reasons
+  background: white
+  padding-top: 6.7rem
+  padding-bottom: 1.3rem
+  .l-row
+    margin-top: 7.8rem
+
+#section-contact
+  background-color: #464646;
+  color: white
+  padding-top: 9.2rem
+  padding-bottom: 8.6rem
+  .l-row
+    margin-top: 3.8rem
+    margin-top: 3.8rem
+    margin-top: 3.8rem
+
+
+
+@import "media" // Always at the end
