@@ -53,10 +53,11 @@
           <div class="l-col-md-6">
             <div class="l-row">
               <div class="l-col-sm-11">
-                <h1 class="c-block-title c-block-title--accent">Аренда помещений в ЮЗАО ВАО СВАО</h1>
-                <h2 class="c-block-title c-block-title--primary c-block-title--huge">от 500&#8381; м²/мес</h2>
+                <h1 data-aos="fade-right" data-aos-delay="100" class="c-block-title c-block-title--accent">Аренда помещений в ЮЗАО ВАО СВАО</h1>
+                <!-- <h2 data&#45;aos="fade&#45;right" data&#45;aos&#45;delay="150" class="c&#45;block&#45;title c&#45;block&#45;title&#45;&#45;primary c&#45;block&#45;title&#45;&#45;huge">от 500&#38;#8381; м²/мес</h2> -->
+                <h2 data-aos="fade-right" data-aos-delay="150" class="c-block-title c-block-title--primary c-block-title--huge">от 500Р м²/мес</h2>
 
-                <form action="/mail/rent_form.php" method="POST" class="c-form c-form--top-line">
+                <form data-aos="fade-up" data-aos-delay="300" action="/mail/callbackSale.php" method="POST" class="c-form c-form--top-line">
                   <div class="l-row">
                     <div class="l-col-sm-9">
                       <p class="c-form__text">Укажите параметры помещения, мы подберем
@@ -81,23 +82,23 @@
 
                   <div class="c-checkbox-list">
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="t-1" class="c-checkbox__input" name="type[]" type="checkbox">
+                      <input id="t-1" class="c-checkbox__input" name="typesquare" type="checkbox" value="Офис">
                       <label class="c-checkbox__label" for="t-1">Офис</label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="t-2" class="c-checkbox__input" name="type[]" type="checkbox">
+                      <input id="t-2" class="c-checkbox__input" name="typesquare" type="checkbox" value="Склад">
                       <label class="c-checkbox__label" for="t-2">Склад</label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="t-3" class="c-checkbox__input" name="type[]" type="checkbox">
+                      <input id="t-3" class="c-checkbox__input" name="typesquare" type="checkbox"  value="Торговое">
                       <label class="c-checkbox__label" for="t-3">Торговое</label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="t-4" class="c-checkbox__input" name="type[]" type="checkbox">
+                      <input id="t-4" class="c-checkbox__input" name="typesquare" type="checkbox"  value="Производство">
                       <label class="c-checkbox__label" for="t-4">Производство</label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="t-5" class="c-checkbox__input" name="type[]" type="checkbox">
+                      <input id="t-5" class="c-checkbox__input" name="typesquare" type="checkbox"  value="Прочее">
                       <label class="c-checkbox__label" for="t-5">Прочее</label>
                     </div>
                   </div>
@@ -107,23 +108,23 @@
 
                   <div class="c-checkbox-list">
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="p-1" class="c-checkbox__input" name="sq[]" type="checkbox">
+                      <input id="p-1" class="c-checkbox__input" name="sq" type="checkbox" value="до 50м">
                       <label class="c-checkbox__label" for="p-1">до 50 м<sup>2</sup></label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="p-2" class="c-checkbox__input" name="sq[]" type="checkbox">
+                      <input id="p-2" class="c-checkbox__input" name="sq" type="checkbox" value="50-250м">
                       <label class="c-checkbox__label" for="p-2">50 м<sup>2</sup> - 250 м<sup>2</sup></label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="p-3" class="c-checkbox__input" name="sq[]" type="checkbox">
+                      <input id="p-3" class="c-checkbox__input" name="sq" type="checkbox" value="250-500м">
                       <label class="c-checkbox__label" for="p-3">250 м<sup>2</sup> - 500 м<sup>2</sup></label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="p-4" class="c-checkbox__input" name="sq[]" type="checkbox">
+                      <input id="p-4" class="c-checkbox__input" name="sq" type="checkbox" value="500-1000м">
                       <label class="c-checkbox__label" for="p-4">500 м<sup>2</sup> - 1000 м<sup>2</sup></label>
                     </div>
                     <div class="c-checkbox c-checkbox--inline">
-                      <input id="p-5" class="c-checkbox__input" name="sq[]" type="checkbox">
+                      <input id="p-5" class="c-checkbox__input" name="sq" type="checkbox" value="от 1000м">
                       <label class="c-checkbox__label" for="p-5">от 1000 м<sup>2</sup></label>
                     </div>
                   </div>
@@ -141,11 +142,11 @@
           </div>
 
           <div class="l-col-md-6 l-d-none l-d-md-flex c-col-image">
-            <img class="c-col-image__source" src="img/main.png" alt="">
+            <img data-aos="fade-left" data-aos-delay="50" class="c-col-image__source" src="img/main.png" alt="">
           </div>
 
         </div>
-        <div class="c-benefits">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" class="c-benefits">
           <div class="l-row">
             <div class="l-col-md-4">
               <div class="c-benefits__item">
@@ -187,10 +188,21 @@
 
     <section id="section-red-bc" class="l-section">
       <div class="l-container ">
-        <div class="c-bc-item">
+        <div data-aos="fade-in" class="c-bc-item">
           <div class="l-row">
             <div class="l-col-md-4">
-              <img class="c-bc-item__image" src="img/bc/red-bc.png" alt="Красный Богатырь">
+              <figure class="c-figure">
+                <img class="c-figure__image c-bc-item__image" src="img/bc/red-bc.png" alt="Красный Богатырь">
+                <figcaption class="c-figure__caption">
+                  <p class="c-figure__title">
+                    Бизнес-центр <br/> «Красный Богатырь»
+
+                  </p>
+                  <p class="c-figure__content">
+                    ВАО / м. Преображенская пл.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
             <div class="l-col-md-8">
               <div class="c-bc-item__content">
@@ -208,7 +220,7 @@
             </div>
           </div>
         </div>
-        <div class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
+        <div data-aos="fade-up" class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
           <div class="l-col-md-5">
             <div class="c-traits">
               <div class="c-traits__item">
@@ -233,7 +245,7 @@
                   рестораны, столовая, магазины с
                   продуктами, цветами, фитнес-клуб.</p>
               </div>
-              <a href="#section-contact" class="c-button c-button--primary c-traits__button js-modal-open">
+              <a href="#section-contact" data-modal="form-modal" class="c-button c-button--primary c-traits__button js-toggle-modal">
                 Подобрать помещение
               </a>
             </div>
@@ -304,10 +316,20 @@
 
     <section id="section-villa-bc" class="l-section">
       <div class="l-container ">
-        <div class="c-bc-item">
+        <div data-aos="fade-in" class="c-bc-item">
           <div class="l-row l-flex-row-reverse">
             <div class="l-col-md-4">
-              <img class="c-bc-item__image" src="img/bc/villa-bc.png" alt="Villa Riva">
+              <figure class="c-figure">
+                <img class="c-figure__image c-bc-item__image" src="img/bc/villa-bc.png" alt="Villa Riva">
+                <figcaption class="c-figure__caption">
+                  <p class="c-figure__title">
+                    Бизнес-центр<br/>«Villa Riva»
+                  </p>
+                  <p class="c-figure__content">
+                    ВАО / м. Преображенская пл.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
             <div class="l-col-md-8">
               <div class="c-bc-item__content">
@@ -321,7 +343,7 @@
             </div>
           </div>
         </div>
-        <div class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
+        <div data-aos="fade-up" class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
           <div class="l-col-md-5">
             <div class="c-traits">
               <div class="c-traits__item">
@@ -345,7 +367,7 @@
                 <p class="c-traits__text">Возможность организовать на одной 
                   территории офис и склад.</p>
               </div>
-              <a href="#section-contact" class="c-button c-button--primary c-traits__button js-modal-open">
+              <a href="#section-contact" data-modal="form-modal" class="c-button c-button--primary c-traits__button js-toggle-modal">
                 Подобрать помещение
               </a>
             </div>
@@ -394,10 +416,20 @@
     </section>
     <section id="section-silver-bc" class="l-section">
       <div class="l-container ">
-        <div class="c-bc-item">
+        <div data-aos="fade-in" class="c-bc-item">
           <div class="l-row">
             <div class="l-col-md-4">
-              <img class="c-bc-item__image" src="img/bc/silver-bc.png" alt="Silver Stone">
+              <figure class="c-figure">
+                <img class="c-figure__image c-bc-item__image" src="img/bc/silver-bc.png" alt="Silver Stone">
+                <figcaption class="c-figure__caption">
+                  <p class="c-figure__title">
+                    Бизнес-центр<br/>«Silver Stone»
+                  </p>
+                  <p class="c-figure__content">
+                    СВАО / м. Свиблово, м. Ботанический сад
+                  </p>
+                </figcaption>
+              </figure>
             </div>
             <div class="l-col-md-8">
               <div class="c-bc-item__content">
@@ -410,7 +442,7 @@
             </div>
           </div>
         </div>
-        <div class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
+        <div data-aos="fade-up" class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
           <div class="l-col-md-5">
             <div class="c-traits">
               <div class="c-traits__item">
@@ -433,7 +465,7 @@
                 <img class="c-traits__icon" src="img/icons/clean.png" alt="Уборка">
                 <p class="c-traits__text">Служба эксплуатации, клининг.</p>
               </div>
-              <a href="#section-contact" class="c-button c-button--primary c-traits__button js-modal-open">
+              <a href="#section-contact" data-modal="form-modal" class="c-button c-button--primary c-traits__button js-toggle-modal">
                 Подобрать помещение
               </a>
             </div>
@@ -489,10 +521,20 @@
 
     <section id="section-cherry-bc" class="l-section">
       <div class="l-container ">
-        <div class="c-bc-item">
+        <div data-aos="fade-in" class="c-bc-item">
           <div class="l-row l-flex-row-reverse">
             <div class="l-col-md-4">
-              <img class="c-bc-item__image" src="img/bc/cherry-bc.png" alt="Cherry Tower">
+              <figure class="c-figure">
+                <img class="c-figure__image c-bc-item__image" src="img/slider/bc/cherry/3.jpg" alt="Cherry Tower">
+                <figcaption class="c-figure__caption">
+                  <p class="c-figure__title">
+                    Торгово-офисный комплекс<br/>«Cherry Tower»
+                  </p>
+                  <p class="c-figure__content">
+                    ЮЗАО / м. Новые Черемушки
+                  </p>
+                </figcaption>
+              </figure>
             </div>
             <div class="l-col-md-8">
               <div class="c-bc-item__content">
@@ -505,7 +547,7 @@
             </div>
           </div>
         </div>
-        <div class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
+        <div data-aos="fade-up" class="l-row l-flex-column-reverse l-flex-md-row no-gutters">
           <div class="l-col-md-5">
             <div class="c-traits">
               <div class="c-traits__item">
@@ -529,7 +571,7 @@
                 <p class="c-traits__text">Помещения: офисы, офисные блоки, 
                   торговые площади, склады.</p>
               </div>
-              <a href="#section-contact" class="c-button c-button--primary c-traits__button js-modal-open">
+              <a href="#section-contact" data-modal="form-modal" class="c-button c-button--primary c-traits__button js-toggle-modal">
                 Подобрать помещение
               </a>
             </div>
@@ -583,52 +625,52 @@
 
     <section id="section-reasons" class="l-section">
       <div class="l-container ">
-        <h2 class="c-block-title c-block-title--lg c-block-title--light c-block-title--dark">8 причин арендовать помещение у нас</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100"  class="c-block-title c-block-title--lg c-block-title--light c-block-title--dark">8 причин арендовать помещение у нас</h2>
         <div class="l-row">
 
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="200" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/like.png" class="c-advantage__icon">
               <p class="c-advantage__description">Выгодные предложения</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="300" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/location.png" class="c-advantage__icon">
               <p class="c-advantage__description">Удобная локация</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="400" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/temp.png" class="c-advantage__icon">
               <p class="c-advantage__description">Арендные каникулы</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="500" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/park.png" class="c-advantage__icon">
               <p class="c-advantage__description">Собственный паркинг</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="600" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/humans.png" class="c-advantage__icon">
               <p class="c-advantage__description">Свыше 5000 <br/>арендаторов</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="700" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/build.png" class="c-advantage__icon">
               <p class="c-advantage__description">Более 10 лет на рынке <br/>недвижимости</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="800" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/human.png" class="c-advantage__icon">
               <p class="c-advantage__description">Персональный<br/>менеджер</p>
             </div>
           </div>
-          <div class="l-col-lg-3 l-col-md-4 l-col-6">
+          <div data-aos="fade-in" data-aos-delay="900" class="l-col-lg-3 l-col-md-4 l-col-6">
             <div class="c-advantage">
               <img src="img/icons/tv.png" class="c-advantage__icon">
               <p class="c-advantage__description">Личный кабинет<br/>арендаторов</p>
@@ -641,7 +683,7 @@
     <section id="section-gitfs" class="l-section">
       <div class="l-container ">
         <div class="l-row">
-          <div class="l-col-md-4 l-col-sm-6">
+          <div data-aos="flip-up" data-aos-delay="100" class="l-col-md-4 l-col-sm-6">
             <div class="c-gift">
               <img src="img/gifts/red-bc.png" alt="Парковка" class="c-gift__image">
               <img src="img/icons/gift.png" alt="Подарок" class="c-gift__icon">
@@ -649,7 +691,7 @@
               <p class="c-gift__subtitle">+ при аренде свыше 100 м<sup>2</sup></p>
             </div>
           </div>
-          <div class="l-col-md-4 l-col-sm-6">
+          <div data-aos="flip-up" data-aos-delay="150" class="l-col-md-4 l-col-sm-6">
             <div class="c-gift">
               <img src="img/gifts/night-bc.png" alt="Рекламные места" class="c-gift__image">
               <img src="img/icons/gift.png" alt="Парковка" class="c-gift__icon">
@@ -658,7 +700,7 @@
               <p class="c-gift__subtitle">+ при аренде свыше 300 м<sup>2</sup></p>
             </div>
           </div>
-          <div class="l-col-md-4 l-col-sm-6">
+          <div data-aos="flip-up" data-aos-delay="300" class="l-col-md-4 l-col-sm-6">
             <div class="c-gift">
               <img src="img/gifts/office.png" alt="Офис" class="c-gift__image">
               <img src="img/icons/gift.png" alt="Подарок" class="c-gift__icon">
@@ -675,7 +717,7 @@
       <div class="l-container ">
         <h2 class="c-block-title c-block-title--lg c-block-title--light ">Необходима дополнительная информация? </h2>
         <h2 class="c-block-title c-block-title--sm c-block-title--light ">Оставьте свои контакты. Менеджер перезвонит в течение часа.</h2>
-        <form action="/mail/rent_form.php" method="POST" class="c-form">
+        <form action="/mail/callbackSale.php" method="POST" class="c-form">
           <div class="l-row">
             <div class="l-col-md-3">
               <div class="c-form-control">
@@ -701,15 +743,54 @@
     </section>
 
 
-  <div id="send-success" class="c-modal">
-    <div class="c-modal__content">
-      <div class="c-modal__header">
-        <span class="c-modal__close">&times;</span>
-        <h2>Ваша заявка успешно отправлена.</h2>
+    <div id="send-success" class="c-modal">
+      <div class="c-modal__content">
+        <div class="c-modal__header">
+          <span class="c-modal__close">&times;</span>
+          <p class="c-modal__title">Ваша заявка успешно отправлена.</p>
+        </div>
       </div>
+
     </div>
 
-  </div>
+
+      <div id="form-modal" class="c-modal">
+      <div class="c-modal__content">
+        <div class="c-modal__header">
+          <span class="c-modal__close">&times;</span>
+          <p class="c-modal__title">Подобрать помещение</p>
+        </div>
+        <div class="c-modal__body">
+          <p class="c-form__text">Укажите Ваши контакты и наши специалисты подберут для Вас лучший вариант.</p>
+          <form data-aos="fade-up" data-aos-delay="300" action="/mail/callbackSale.php" method="POST" class="c-form ">
+            <div class="l-row">
+              <div class="l-col-sm-6">
+                <div class="c-form-control">
+                  <input name="name" class="c-form-control__input" required type="text" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="l-col-sm-6">
+                <div class="c-form-control">
+                  <input name="phone" class="c-form-control__input" required type="text" placeholder="+7-(___)-___-____">
+                </div>
+              </div>
+            </div>
+            <div class="l-row">
+              <div class="l-col-12">
+                <button class="c-button c-button--secondary">Отправить</button>
+              </div>
+            </div>
+            <p class="c-form__copyright">Нажимая на кнопку “Отправить”, вы даете согласие
+              на обработку персональных данных согласно политике конфиденциальности</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+
 
 
     <script src="js/scripts.min.js"></script>

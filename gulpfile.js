@@ -38,6 +38,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jquery-mask-plugin/dist/jquery.mask.js',
+		'app/libs/aos/dist/aos.js',
     'node_modules/@glidejs/glide/dist/glide.min.js',
 		'app/js/common.js', // Always at the end
 		])
